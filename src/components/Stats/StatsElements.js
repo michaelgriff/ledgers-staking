@@ -9,6 +9,10 @@ export const StatsContainer = styled.div`
   width: 50%;
   color: white;
   font-size: 30px;
+
+  @media screen and (max-width: 970px) {
+    font-size: 20px;
+  }
 `;
 
 export const StatsRow = styled.div`
@@ -25,6 +29,13 @@ export const StatRed = styled.div`
   padding: 5px 35px;
   margin: 25px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+
+  @media screen and (max-width: 970px) {
+    font-size: 15px;
+    padding: 5px 22px;
+    margin: 17px;
+    min-width: 28px;
+  }
 `;
 
 export const StatSilver = styled.div`
@@ -36,6 +47,12 @@ export const StatSilver = styled.div`
   padding: 5px 35px;
   margin: 25px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+
+  @media screen and (max-width: 970px) {
+    font-size: 15px;
+    padding: 5px 22px;
+    margin: 17px;
+  }
 `;
 
 export const StatGold = styled.div`
@@ -47,4 +64,10 @@ export const StatGold = styled.div`
   padding: 5px 35px;
   margin: 25px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+
+  @media screen and (max-width: 970px) {
+    font-size: 15px;
+    padding: 5px 22px;
+    margin: 17px;
+  }
 `;

@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const DisplayContainer = styled.div`
   display: flex;
   margin-top: 10px;
+
+  @media screen and (max-width: 970px) {
+    display: block;
+  }
 `;
 
 export const DisplayHalf = styled.div`
@@ -44,6 +48,7 @@ export const ModalImage = styled.img`
   max-height: 153px;
   max-width: 153px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 `;
 
 export const ModalImageGold = styled.img`
@@ -55,6 +60,7 @@ export const ModalImageGold = styled.img`
   height: auto;
   max-height: 153px;
   max-width: 153px;
+  cursor: pointer;
 `;
 
 export const ModalButton = styled.button`

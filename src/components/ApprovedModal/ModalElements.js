@@ -24,6 +24,12 @@ export const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
+  min-height: 384px;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+    height: 300px;
+  }
 `;
 
 export const ModalImg = styled.img`
@@ -49,6 +55,15 @@ export const ModalContent = styled.div`
 
     span {
       color: red;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2vw;
     }
   }
 

@@ -8,7 +8,7 @@ import {
 } from "./ModalElements";
 import ledger from "../../135.png";
 
-const ApprovedModal = ({ showModal, setShowModal }) => {
+const ApprovedModal = ({ showModal, setShowModal, setApprovalForAll }) => {
   const modalRef = useRef();
 
   const closeModal = (e) => {
@@ -28,7 +28,9 @@ const ApprovedModal = ({ showModal, setShowModal }) => {
                 To stake your Ledgers NFT, <span>you must</span> approve the
                 Ledegrs Staking contract{" "}
               </p>
-              <button>APPROVE</button>
+              <button class="approval" onClick={setApprovalForAll}>
+                APPROVE
+              </button>
             </ModalContent>
             <CloseModalButton
               aria-label="Close modal"
