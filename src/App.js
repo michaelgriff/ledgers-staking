@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Web3 from "web3";
 import ledgers_abi from "./ledgers_abi.json";
 import stake_abi from "./stake_abi.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ledger from "./135.png";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import {
@@ -305,7 +304,7 @@ function App() {
                     {unstaked
                       .reduce(function (rows, key, index) {
                         return (
-                          (index % 3 == 0
+                          (index % 3 === 0
                             ? rows.push([key])
                             : rows[rows.length - 1].push(key)) && rows
                         );
@@ -355,7 +354,7 @@ function App() {
                     {staked
                       .reduce(function (rows, key, index) {
                         return (
-                          (index % 3 == 0
+                          (index % 3 === 0
                             ? rows.push([key])
                             : rows[rows.length - 1].push(key)) && rows
                         );
